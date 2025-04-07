@@ -1,0 +1,39 @@
+name: livestreamui
+description: A new Flutter project.
+
+version: 0.0.1+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  permission_handler: ^11.0.1
+  gal: ^1.0.4
+  path_provider: ^2.1.2
+  path: ^1.9.0
+  intl: ^0.18.1
+  camera: ^0.10.6
+  flutter:
+    sdk: flutter
+
+  english_words: ^4.0.0
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  fonts:
+    - family: MainFont
+      fonts:
+        - asset: assets/coolvetica.otf
+
+dependency_overrides:
+  camera_android_camerax:
+    path: android/plugins/camera_android_camerax
